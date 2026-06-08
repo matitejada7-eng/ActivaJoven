@@ -1,0 +1,38 @@
+ActivaJoven · App instalable para Android (PWA)
+================================================
+
+Esta carpeta es tu app lista para instalar en Android. Contiene:
+  index.html, app.js, manifest.webmanifest, service-worker.js, icon-192/512/180.png
+
+------------------------------------------------
+PASO 1 · Publicarla en internet (HTTPS obligatorio)
+------------------------------------------------
+Una PWA solo se puede instalar si está servida por HTTPS (no sirve abrir el
+archivo directamente). Sube TODA la carpeta a un hosting gratuito:
+
+  - Netlify Drop:  https://app.netlify.com/drop  (arrastra la carpeta y listo)
+  - GitHub Pages:  sube los archivos a un repo y activa Pages
+  - Vercel, Cloudflare Pages, tiiny.host... cualquiera sirve
+
+Te dará una URL tipo  https://activajoven.netlify.app
+
+------------------------------------------------
+PASO 2 · Instalarla en el teléfono Android
+------------------------------------------------
+  1. Abre esa URL en Chrome en el Android.
+  2. Menú (⋮) -> "Instalar aplicación" / "Agregar a pantalla de inicio".
+  3. Aparece el ícono del rayo en el cajón de apps y abre a pantalla completa.
+  Funciona sin conexión después de la primera carga.
+
+------------------------------------------------
+PASO 3 (opcional) · Generar un APK / AAB real
+------------------------------------------------
+Si necesitas un archivo .apk (para compartir o subir a Google Play), sin programar:
+
+  1. Entra a  https://www.pwabuilder.com
+  2. Pega la URL del PASO 1 y pulsa "Start".
+  3. Elige "Android" -> "Generate Package".
+  4. Descarga el .apk (para instalar a mano) o el .aab (para Google Play).
+
+Usuario admin de prueba dentro de la app:
+  admin@activajoven.com  /  admin123
